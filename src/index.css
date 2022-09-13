@@ -5,9 +5,511 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: #e6e6e2; */
+  background-color: rgba(218,218,218,1);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #262626;
+  height: 3190px;
+  /* width: 70%; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+/* footer and copyright */
+.footer{
+  border-radius: 50%;
+  width: 23px;
+  height: 21px;
+}
+
+
+.positionfooter{ 
+  position: absolute;
+  margin-top: 80px;
+  left: 48%;
+}
+
+.copyrights{
+  position: absolute;
+  margin-top: 120px;
+  font-size: 13px;
+  left: 44%;
+  color: #808080;
+}
+
+/* making footer movile responsive */
+@media (max-width: 500px) {
+  .copyrights{
+    position: absolute;
+    margin-top: 120px;
+    font-size: 13px;
+    left: 38%;
+    color: #808080;
+  }
+}
+
+/* handling nav bar */
+.main-section-nav{
+  position: fixed;
+  overflow: hidden;
+  z-index: 9999;
+  width: 100%;
+ }
+ 
+#portfolio{
+  color: white;
+  font-weight: bold;
+  padding-left: 80px;
+}
+#item{
+  padding-right: 80px;
+}
+#item-padding{
+  padding-right: 30px;
+  color: white;
+}
+.main-nav { 
+   position: fixed; 
+  width: 100%;
+}  
+.navbar{
+  background-color: #1f2e2e;
+}
+
+.nav-bgcolor{
+  background-color: #293d3d;
+}
+
+.navbar-nav ms-auto{
+  padding-right: 50px;
+}
+
+.ms-auto .link {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+} 
+.link:hover{
+  background-color: #476b6b;
+} 
+.link{ 
+  font-size: 14px;
+ }  
+ .container-fluid {
+  padding-right:0;
+  padding-left:0;
+  margin-right:auto;
+  margin-left:auto
+}
+
+
+/* background image */
+.wallpaper-image{
+  width: 100%;
+  height: 540px;
+  opacity: 0.9;
+  filter: brightness(50%);
+  position: relative;
+  top: 0;
+}
+
+.intro{
+  position: relative;
+}
+/* my image */
+.profile-pic{
+  position:absolute;
+  margin-top: 10px;
+  top: 13%;
+  left: 41%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 220px;
+	box-shadow: 0 0 0 0 rgb(141, 112, 92);
+	transform: scale(5);
+	animation: pulse 2s infinite;
+  /* height: 250px; */
+}
+
+/* to give pulsating effect around profile pic */
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(129, 124, 124, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 20px rgba(234, 189, 166, 0);
+	}
+
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(199, 150, 150, 0);
+	}
+}
+
+
+/* name and graduate student text */
+
+.title {
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  top: 72%;
+  left: 50%;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
+}
+
+.role{
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  top: 80%;
+  left: 50%;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+}
+
+
+/* icons for github and linkedin and resume button*/
+.github-pic{
+  position:absolute;
+  top: 91%;
+  left: 45%;
+  height: 50px;
+  width: 50px;
+  border-radius: 20%;
+}
+
+.linkedin-pic{
+  position: absolute;
+  top: 91%;
+  left: 52%;
+  height: 50px;
+  width: 50px;
+  border-radius: 20%;
+}
+
+#btn{
+  position: absolute;
+  background-color: #204060;
+  top: 77%;
+  left: 59%;
+  color: white;
+  border: none;
+  font-size: 16px;
+  height: 40px;
+  width: 170px;
+  border-radius: 5%;
+}
+
+
+/* making buttons mobile responsive */
+@media (max-width: 500px) {
+  .title {
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    top: 77%;
+    left: 40%;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+  }
+
+  .role{
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    top: 85%;
+    left: 50%;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+  }
+
+  #btn{
+    position: absolute;
+    background-color: #204060;
+    top: 90%;
+    left: 45%;
+    color: white;
+    border: none;
+    font-size: 16px;
+    height: 40px;
+    width: 170px;
+    border-radius: 5%;
+  }
+
+  .github-pic{
+    position:absolute;
+    top: 89%;
+    left: 15%;
+    height: 50px;
+    width: 50px;
+    border-radius: 20%;
+  }
+
+  .linkedin-pic{
+    position: absolute;
+    top: 89%;
+    left: 30%;
+    height: 50px;
+    width: 50px;
+    border-radius: 20%;
+  }
+}  
+
+
+
+
+
+
+/* handles about and basic info section */
+.split {
+  margin-top: 40px;
+  margin-left: 80px;
+  box-shadow: 5px 5px 20px;
+  margin-right: 80px;
+  /* width: 50%; */
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .split {
+    margin-top: 40px;
+    margin-left: 80px;
+    box-shadow: 5px 5px 20px;
+    margin-right: 80px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+
+.header{
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.titleheads{
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.data{
+  font-size: 15px;
+}
+.centered {
+  width: 50%;
+  float: left;
+  padding: 20px; 
+  text-align: left;
+  padding: 20px;
+}
+
+
+/* education section */
+.education {
+  margin-top: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.grad-masters{
+  background-color: #293d3d;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.graddata{
+  font-size: 30px;
+}
+.subdata{
+  font-size: 20px;
+}
+
+/* experience section */
+.work {
+  margin-top: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
+  text-align: left;
+}
+
+.bullet{
+  list-style-image: url('./images/bullet.png');
+}
+
+.workexp{
+  margin-top: 60px;
+  padding: 20px;
+  margin-top: 15px;
+  box-shadow: 0 0 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: white;
+}
+
+.internship{
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 50px;
+  box-shadow: 0 0 10px;
+  margin-right: 50px;
+  background-color: white;
+}
+
+
+@media (max-width: 500px) {
+  .workexp{
+      margin-top: 60px;
+      padding: 20px;
+      margin-top: 15px;
+      box-shadow: 0 0 10px;
+      margin-left: 50px;
+      margin-right: 50px;
+      background-color: white;
+      width: 100%;  
+  }
+  .internship{
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+    box-shadow: 0 0 10px;
+    margin-right: 50px;
+    background-color: white;
+    width: 100%;
+  }
+
+}
+
+.subtitle{
+  text-align: left;
+  font-size: 22px;
+  /* font-weight:550; */
+}
+.worksubtitle{
+  text-align: left;
+  font-size: 22px;
+  font-weight:540;
+}
+.jobrole{
+  font-size: 16px;
+  /* font-weight:bold; */
+  font-style: italic;
+  color: #808080;
+}
+
+.date{
+  font-size: 16px;
+  color: #808080;
+}
+
+/* skills section */
+.skills {
+  margin-top: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
+  background-color: #293d3d;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  padding: 20px;
+  text-align: center;
+}
+.skillshead{
+  font-weight: bold;
+}
+.head{
+  font-weight: bold;
+}
+
+
+@media (max-width: 500px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: #293d3d;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.languages{
+  width: 50%;
+  float: left;
+  padding: 20px; 
+  text-align: left;
+  padding: 20px;
+}
+
+.subtitle{
+  font-size: 17px;
+}
+
+.listdata{
+  font-size: 16px;
+}
+
+
+/* for scrolling effects */
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+
+.split{
+  position: relative;
+  transform: translateY(80px);
+  opacity: 0;
+  transition: 0.6s all ease;
+}
+
+.split.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.skills{
+  position: relative;
+  transform: translateX(80px);
+  opacity: 0;
+  transition: 0.6s all ease;
+}
+
+.skills.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.education{
+  position: relative;
+  transform: translateX(80px);
+  opacity: 0;
+  transition: 0.6s all ease;
+}
+
+.education.active{
+  transform: translateX(0);
+  opacity: 1;
 }
