@@ -8,6 +8,11 @@
 # testing
 /coverage
 
+# Ignore filecontentindex and slnx.sqlite
+FileContentIndex
+slnx.sqlite
+VSWorkspaceState.json
+
 
 
 # misc
