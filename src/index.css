@@ -17,6 +17,10 @@ code {
     monospace;
 }
 
+/* -----------to prevent horizontal scrolling on small screens ------------------*/
+body {
+    overflow-x: hidden;
+}
 
 /* ------------------------ NAV BAR ---------------------------------*/
 /* handling nav bar */
@@ -78,7 +82,7 @@ code {
 
 
 /*------------------------- DASHBOARD -----------------------------------------*/
-/* background image */
+/* background image  */
 .wallpaper-image{
   width: 100%;
   height: 540px;
@@ -87,7 +91,6 @@ code {
   position: relative;
   top: 0;
 }
-
 
 /* my image */
 .profile-pic{
@@ -141,31 +144,28 @@ img.profile-pic {
     top: 13%;
     color: whitesmoke;
     font-size: 22px;
+    width: 100%;
+    padding: 0 4%;
 }
 
 .dashboard-container {
-    width: 100%; 
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
-
-
-
 
 /* diving dashboard width into 2 columns */
 .dashboard-left {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; /* Center the text */
-    padding: 0px; /* Add padding for spacing */
-    background-color: #001a1a;
+    width: 40%;
+    float: left;
 }
 
 .dashboard-right {
-    width: 40%; /* This div takes up 40% width */
-    float: right; /* Float the div to the right */
+    width: 60%; /* This div takes up 40% width */
+    float: right;
 }
+
+
 
 /* intro lines on dashboard-right */
 .small-intro {
@@ -188,7 +188,7 @@ img.profile-pic {
     position: absolute;
     font-weight: bold;
     color: white;
-    top: 72%;
+    top: 80%;
     left: 25%;
     font-size: 40px;
     transform: translate(-50%, -50%);
@@ -197,7 +197,7 @@ img.profile-pic {
 /* email and contact on dashboard. common attributes listed */
 .email, .contact {
     color: white;
-    top: 80%;
+    top: 88%;
     font-size: 18px;
     transform: translate(-50%, -50%);
 }
@@ -246,7 +246,11 @@ img.profile-pic {
 }
 
 
+
+
+
 /* -------------------------- RESPONSIVE DASHBOARD -----------------------*/
+
 
 /* adjusting title, contact and email for screen width between 600 - 1000px */
 @media (min-width: 600px) and (max-width: 1000px) {
@@ -260,44 +264,68 @@ img.profile-pic {
     }
     .email {
         position: absolute;
-        top: 77%;
+        top: 88%;
         transform: translate(-50%, -50%);
     }
     .contact{
-        top: 81%;
+        top: 93%;
     }
-}
-
-/* adjusting github,linkedin and resume button for screens sizes 600 - 850px*/
-@media (min-width: 600px) and (max-width: 850px) {
     #btn {
         position: absolute;
-        top: 70.7%;
-        left: 68%;
+        top: 71%;
+        left: 73%;
     }
+
     .github-pic, .linkedin-pic {
         position: absolute;
         top: 70%;
         border-radius: 20%;
     }
+
     .github-pic {
-        left: 52%;
+        left: 55%;
     }
 
     .linkedin-pic {
-        left: 60%;
+        left: 64%;
     }
+   
 }
 
+
+
 /* adjusting github,linkedin and resume button for mobile screens below 600px*/
-@media (max-width: 600px){
+@media (max-width: 600px) {
+    .dashboard-container {
+        height: 600px;
+        display: block;
+        background-color: #001a1a;
+    }
+    .dashboard-left {
+        display: block; /* Change display to block for smaller screens */
+    }
+
+    .dashboard-right {
+        width: 100%; /* Adjust width as needed for smaller screens */
+        float: none; /* Reset float property for smaller screens */
+        /* Add any other styles you want for smaller screens */
+    }
+    .profile-pic {
+        top: 30%;
+        margin-left: 16%;
+        display: block;
+        width: 40%;
+    }
+
     .title {
         font-size: 25px;
-        left: 38%;
+        left: 50%;
+
+        top: 72%;
     }
 
     .email, .contact {
-        left: 37%;
+        left: 50%;
         font-size: 16px;
     }
 
@@ -315,25 +343,25 @@ img.profile-pic {
         display: none;
     }
 
-   
+    
     #btn {
         position: absolute;
-        top: 77%;
-        left: 58%;
+        top: 88%;
+        left: 48%;
     }
 
     .github-pic, .linkedin-pic {
         position: absolute;
-        top: 85%;
+        top: 87%;
         border-radius: 20%;
     }
 
     .github-pic {
-        left: 64%;
+        left: 12%;
     }
 
     .linkedin-pic {
-        left: 76%;
+        left: 30%;
     }
 }
 /*--------------------------- END OF DASHBOARD ----------------------------------------*/
@@ -349,18 +377,17 @@ img.profile-pic {
 /* dividing page into 2 vertical columns */
 .maincontentpage-container {
     width: 100%;
+    display: flex;
     height: 1500px;
 }
 .maincontentpage-left {
     position: relative;
-    float: left;
     width: 30%;
     padding-left: 3%; /* Add padding for spacing */
 }
 
 .maincontentpage-right {
     width: 70%; /* This div takes up 40% width */
-    float: left; /* Float the div to the right */
     padding-left: 3%; /* Add padding for spacing */
     padding-right: 3%;
     background-color: #001a1a;
@@ -371,14 +398,18 @@ img.profile-pic {
 /* -------------------RESPONSIVE MAIN CONTENT PAGE ------------------------------*/
 /* display main content page content one below the other on mobile views*/
 @media (max-width: 600px) {
-    .maincontentpage-left, .maincontentpage-right {
-        float: none;
-        width: 100%;
-        padding: 0 7%; /* Remove padding to reduce spacing */
-        text-align: left; /* Adjust text alignment */
-        align-items: normal; /* Reset alignment */
+    .maincontentpage-container {
+        display: block; /* Change to block layout for smaller screens */
     }
+
+    .maincontentpage-left, .maincontentpage-right {
+        width: 100%; /* Full width for smaller screens */
+        padding: 4%; /* Reset padding for smaller screens */
+    }
+
+   
 }
+
 
 /*-------------------------- ABOUT SECTION IN MAIN CONTENT PAGE-------------------*/
 /* about me section */
@@ -399,7 +430,7 @@ img.profile-pic {
 
 @media (max-width: 600px) {
     .about-header {
-        text-align: right;
+        text-align: center;
     }
 }
 
@@ -681,6 +712,7 @@ a > .go-to-github-project-arrow {
 }
 
 /* ---------------------------- RESPONSIVE FOOTER ----------------------------------- */
+
 @media (max-width: 600px) {
     .positionfootericon {
         margin-top: 18%;

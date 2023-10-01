@@ -10,10 +10,11 @@ export default function Dashboard(props){
 
     return(
         <div className='dashboard-container' >
+            <img src={wallpaper} className="wallpaper-image" />
+            <div className='tagline'>{props.tagline1}</div><br />
+
             <div className='dashboard-left' id="home">
-                <img src={wallpaper} className="wallpaper-image" />
                 <img src={profilepic} className="profile-pic" />
-                <div className='tagline'>{props.tagline1}</div><br />
                 <div className='title'>{props.title}</div><br/>
                 <div className='email'>{props.email}</div><br />
                 <div className='contact'>{props.contact}</div><br />
@@ -24,9 +25,11 @@ export default function Dashboard(props){
 
             <div className='dashboard-right'>
                 <div className='small-intro'>{props.smallintroline1}<span id='smallintroline2'>{props.smallintroline2}</span> </div><br /><br />
-                <a href={props.github}><img src={github} className="github-pic" /></a>
-                <a href={props.linkedin}><img src={linkedin} className="linkedin-pic" /></a>
-                <a href={props.download} download className='download'><button id="btn">Download Resume</button></a>
+                <div className="dashboard-buttons">
+                    <a href={props.github}><img src={github} className="github-pic" /></a>
+                    <a href={props.linkedin}><img src={linkedin} className="linkedin-pic" /></a>
+                    <a href={props.download} download className='download'><button id="btn">Download Resume</button></a>
+                </div>
                
             </div>
         </div>
