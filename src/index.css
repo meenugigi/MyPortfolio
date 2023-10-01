@@ -1,0 +1,723 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #e6e6e2; */
+  //background-color: rgba(218,218,218,1);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  height: fit-content;
+  /* width: 70%; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* ------------------------ NAV BAR ---------------------------------*/
+/* handling nav bar */
+.main-section-nav{
+  position: fixed;
+  overflow: hidden;
+  z-index: 9999;
+  width: 100%;
+ }
+ 
+#portfolio{
+  color: white;
+  font-weight: bold;
+  padding-left: 80px;
+}
+#item{
+  padding-right: 80px;
+}
+#item-padding{
+  padding-right: 30px;
+  color: white;
+}
+.main-nav { 
+   position: fixed; 
+  width: 100%;
+}  
+.navbar{
+  background-color: #1f2e2e;
+}
+
+.nav-bgcolor{
+  background-color: #293d3d;
+}
+
+.navbar-nav ms-auto{
+  padding-right: 50px;
+}
+
+.ms-auto .link {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+} 
+.link:hover{
+  background-color: #476b6b;
+} 
+.link{ 
+  font-size: 14px;
+ }  
+ .container-fluid {
+  padding-right:0;
+  padding-left:0;
+  margin-right:auto;
+  margin-left:auto
+}
+ /* ----------------------------- END OF NAV BAR --------------------------- */
+
+
+
+
+/*------------------------- DASHBOARD -----------------------------------------*/
+/* background image */
+.wallpaper-image{
+  width: 100%;
+  height: 540px;
+  opacity: 0.9;
+  filter: brightness(50%);
+  position: relative;
+  top: 0;
+}
+
+
+/* my image */
+.profile-pic{
+  position:absolute;
+  margin-top: 10px;
+  top: 20%;
+  left: 41%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 220px;
+	box-shadow: 0 0 0 0 rgb(141, 112, 92);
+	transform: scale(5);
+	animation: pulse 2s infinite;
+  /* height: 250px; */
+}
+
+/* positioning the profile pic on dashboard */
+img.profile-pic {
+    left: 15%;
+}
+
+/* to give pulsating effect around profile pic */
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(129, 124, 124, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 20px rgba(234, 189, 166, 0);
+	}
+
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(199, 150, 150, 0);
+	}
+}
+
+
+/* common attributes listed */
+.tagline, .small-intro, .email, .contact {
+    position: absolute;
+    font-weight: normal;
+}
+
+/* tagline text on dashboard*/
+.tagline {
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 13%;
+    color: whitesmoke;
+    font-size: 22px;
+}
+
+.dashboard-container {
+    width: 100%; 
+}
+
+
+
+
+/* diving dashboard width into 2 columns */
+.dashboard-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center the text */
+    padding: 0px; /* Add padding for spacing */
+    background-color: #001a1a;
+}
+
+.dashboard-right {
+    width: 40%; /* This div takes up 40% width */
+    float: right; /* Float the div to the right */
+}
+
+/* intro lines on dashboard-right */
+.small-intro {
+    top: 47%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 36%;
+    color: lightgrey;
+    right: 15%;
+    font-size: 18px;
+    transform: translate(20%, -50%);
+}
+
+/* intro lines displayed in italic on dashboard */
+#smallintroline2 {
+    font-style: italic;
+}
+
+/* Meenu Gigi displayed on dashboard */
+.title {
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    top: 72%;
+    left: 25%;
+    font-size: 40px;
+    transform: translate(-50%, -50%);
+}
+
+/* email and contact on dashboard. common attributes listed */
+.email, .contact {
+    color: white;
+    top: 80%;
+    font-size: 18px;
+    transform: translate(-50%, -50%);
+}
+
+/* email displayed on dashboard */
+.email{
+  left: 18%;
+}
+
+/* contact displayed on dashboard */
+.contact {
+    left: 31%;
+}
+
+/* common attributes listed */
+.github-pic, .linkedin-pic {
+    position: absolute;
+    top: 62%;
+    height: 50px;
+    width: 50px;
+    border-radius: 20%;
+}
+
+/* icons for github button */
+.github-pic {
+    left: 58%;
+}
+
+/* linked pic icon on dashboard */
+.linkedin-pic{
+  left: 64%;
+}
+
+/* download resume button icon on dashboard */
+#btn{
+  position: absolute;
+  background-color: #204060;
+  left: 70%;
+  top: 62.7%;
+  color: white;
+  border: none;
+  font-size: 16px;
+  height: 40px;
+  width: 170px;
+  border-radius: 5%;
+}
+
+
+/* -------------------------- RESPONSIVE DASHBOARD -----------------------*/
+
+/* adjusting title, contact and email for screen width between 600 - 1000px */
+@media (min-width: 600px) and (max-width: 1000px) {
+    .title {
+        font-size: 30px;
+        left: 30%;
+    }
+    .email, .contact {
+        left: 28%;
+        font-size: 16px;
+    }
+    .email {
+        position: absolute;
+        top: 77%;
+        transform: translate(-50%, -50%);
+    }
+    .contact{
+        top: 81%;
+    }
+}
+
+/* adjusting github,linkedin and resume button for screens sizes 600 - 850px*/
+@media (min-width: 600px) and (max-width: 850px) {
+    #btn {
+        position: absolute;
+        top: 70.7%;
+        left: 68%;
+    }
+    .github-pic, .linkedin-pic {
+        position: absolute;
+        top: 70%;
+        border-radius: 20%;
+    }
+    .github-pic {
+        left: 52%;
+    }
+
+    .linkedin-pic {
+        left: 60%;
+    }
+}
+
+/* adjusting github,linkedin and resume button for mobile screens below 600px*/
+@media (max-width: 600px){
+    .title {
+        font-size: 25px;
+        left: 38%;
+    }
+
+    .email, .contact {
+        left: 37%;
+        font-size: 16px;
+    }
+
+    .email {
+        position: absolute;
+        top: 77%;
+        transform: translate(-50%, -50%);
+    }
+
+    .contact {
+        top: 81%;
+    }
+    /* intro lines on dashboard-right - do not display on mobile views */
+    .small-intro, #smallintroline2 {
+        display: none;
+    }
+
+   
+    #btn {
+        position: absolute;
+        top: 77%;
+        left: 58%;
+    }
+
+    .github-pic, .linkedin-pic {
+        position: absolute;
+        top: 85%;
+        border-radius: 20%;
+    }
+
+    .github-pic {
+        left: 64%;
+    }
+
+    .linkedin-pic {
+        left: 76%;
+    }
+}
+/*--------------------------- END OF DASHBOARD ----------------------------------------*/
+
+
+
+/* ------------------------- MAIN CONTENT PAGE ------------------------------------*/
+/* setting background color to maincontent page */
+.parent-container {
+    background-color: #001a1a;
+}
+
+/* dividing page into 2 vertical columns */
+.maincontentpage-container {
+    width: 100%;
+    height: 1500px;
+}
+.maincontentpage-left {
+    position: relative;
+    float: left;
+    width: 30%;
+    padding-left: 3%; /* Add padding for spacing */
+}
+
+.maincontentpage-right {
+    width: 70%; /* This div takes up 40% width */
+    float: left; /* Float the div to the right */
+    padding-left: 3%; /* Add padding for spacing */
+    padding-right: 3%;
+    background-color: #001a1a;
+    overflow-y: auto;
+    max-height: 1500px;
+}
+
+/* -------------------RESPONSIVE MAIN CONTENT PAGE ------------------------------*/
+/* display main content page content one below the other on mobile views*/
+@media (max-width: 600px) {
+    .maincontentpage-left, .maincontentpage-right {
+        float: none;
+        width: 100%;
+        padding: 0 7%; /* Remove padding to reduce spacing */
+        text-align: left; /* Adjust text alignment */
+        align-items: normal; /* Reset alignment */
+    }
+}
+
+/*-------------------------- ABOUT SECTION IN MAIN CONTENT PAGE-------------------*/
+/* about me section */
+.about-header{
+    top: 10%;
+    font-weight: 700;
+}
+.about-me {
+    color: #a6a6a6;
+    font-weight: 370;
+    padding: 3%;
+    text-align: center;
+    box-shadow: 4px 5px 20px;
+}
+.about-text{
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .about-header {
+        text-align: right;
+    }
+}
+
+
+/*---------------- EDUCATION SECTION IN MAIN CONTENT PAGE--------------------------*/
+.education {
+    color: lightgray;
+    text-align: center;
+    font-weight: 370;
+    padding-top: 12px;
+    border: 1px solid gray;
+    position: relative;
+    transform: translateX(80px);
+    opacity: 0;
+    transition: 0.6s all ease;
+    margin: 0 10%; /* 0% for top and bottom. 10% for left and right */
+}
+
+.education-level {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.education-school {
+    font-size: 14px;
+    color: white;
+}
+.education.active{
+    margin-top: 0px
+}
+
+/* for scrolling effects */
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+
+.education.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+/*-----------------PROFESSIONAL EXP SECTION IN MAIN CONTENT PAGE------------------ */
+/* common attributes listed */
+.profexp-timeline, .profexp-details {
+    text-align: left; /* Center the text */
+    padding: 0 1%; /* 0% for top and bottom. 1% padding for left and right each. */
+    float: left;
+}
+
+/* showing date for individual work exp */
+.profexp-timeline {
+    position: relative;
+    width: 20%;
+    align-items: left;
+}
+
+.profexp-details {
+    width: 80%; /* This div takes up 40% width */    
+    justify-content:space-evenly;
+}
+
+.work-details {
+    color: #a6a6a6;
+    font-weight: 370;
+}
+
+
+/* for each card carrying professional experience*/
+.card-profexp {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    border: 0px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.container-prof {
+    padding: 1%;
+    background-color: #001a1a;
+    color: white;
+    font-size: 14px;
+    border: none;
+    display: flex;
+}
+
+/* highlight card on hovering on indivual work exp */
+.container-prof:hover {
+    box-shadow: 0 20px 16px 0 rgba(0,0,0,0.2);
+    background-color: #001a1a;
+    opacity: 0.9;
+}
+
+
+
+/* for displaysing skills on each card under professional experience*/
+.work-skills {
+    display: inline-block;
+    margin-right: 2%;
+    margin-bottom: 1%; /* Add some vertical spacing between the boxes */
+    background-color: rgba(0, 102, 102, 0.3);
+    padding: 3px 13px;
+    color: aquamarine;
+    border-radius: 100px;
+    word-wrap: break-word; /* Allow wrapping within the boxes */
+}
+
+.link{
+    color: red;
+}
+
+/* ------------------- COMMON ATTRIBUTES FOR WORK, PROJECT AND PROJECT ARRCHIVE TEXT-------------*/
+/* change title font color on hovering on work, project section and 'view full project archive' text*/
+.container-prof:hover .work-title, a.project:hover .project-title, .project-archive:hover .project-archive {
+    color: mediumaquamarine;
+}
+
+/* titles for individual work-exp and project */
+.work-title, .project-title, .project-archive {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+/* underline project title and 'view full project archive' on hover*/
+a.project:hover .project-title, .project-archive:hover .project-archive {
+    text-decoration: underline;
+}
+
+
+/* ----------------------------- PROJECT SECTION IN MAIN CONTENT PAGE ------------------------ */
+.flex-container {
+    position: relative;
+    top: 0px;
+    background-color: #001a1a;
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+/* hovering on individual project section*/
+.flex-container > .project:hover {
+    background-color: rgba(0, 102, 102, 0.3);
+    border-radius: 1%;
+}
+
+
+/* Project sections - navigate to github on clicking a project section*/
+a.project {
+    width: 45%;
+    text-align: left;
+    font-size: 13.5px;
+    text-decoration: none;
+    color: #a6a6a6;
+    margin-top: 5%;
+    padding: 1% 0;
+}
+
+/* do not change font-color on hovering */
+a.project:hover .project-details {
+    color: #a6a6a6;
+}
+
+
+/* to diagonally move the go-to arrow upward on hovering on a project section*/
+a.project:hover .go-to-github-project-arrow {
+    transform: translate(7px, -7px);
+}
+
+/* giving image highlights on hovering on individual project*/
+a.project:hover .project-image {
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    border-color: darkgray;
+}
+
+/* dividing page into 2 vertical columns to show projects */
+.project-left{
+    float: left;
+    width: 25%;
+    padding: 1%;
+}
+
+.project-right{
+    float: left;
+    width: 75%;
+    padding-left: 3%;
+}
+
+/* project image for each project section */
+.project-image{
+    width: 100%;
+    height: 18%;
+    padding-top: 5%;
+}
+
+
+/* go-to arrow in each project section */
+.go-to-github-project-arrow {
+    width: 4%;
+    height: 4%;
+}
+
+a > .go-to-github-project-arrow {
+    width: 1.3%;
+    height: 1.3%;
+    margin-left: 0.6%;
+}
+
+/* 'view full project archive' line */
+.project-archive {
+    text-decoration: none;
+    text-align: right;
+    padding-right: 4%;
+}
+
+/* go to arrow on the 'view full project archive' line */
+.project-archive:hover .go-to-github-project-arrow {
+    transform: translate(7px, -7px); /* Combined transforms */
+}
+
+/* ----------------------------- RESPONSIVE PROJECT SECTION -----------------------------*/
+/* display main content page content one below the other on mobile views*/
+@media (max-width: 600px) {
+    a.project {
+        margin-top: 13%;
+        width: 90%;
+        text-align: left;
+        font-size: 13.5px;
+        text-decoration: none;
+        color: #a6a6a6;
+        padding: 0.6%;
+    }
+    .project-archive {
+        text-decoration: none;
+        text-align: right;
+        padding-right: 6%;
+    }
+}
+/* -----------  END OF MAIN PAGE CONTENT SECTION ------------------------------------*/
+
+
+
+
+/* ----------------------------------- FOOTER SECTION ----------------------------------*/
+.footer {
+    background-color: #001a1a;
+    height: 130px;
+    width: 100%;
+}
+/* footer and copyright */
+.footericon {
+    border-radius: 50%;
+    width: 23px;
+    height: 21px;
+}
+
+/* common attributes listed */
+.positionfootericon, .copyrights {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.positionfootericon {
+    margin-top: 7%;
+}
+
+.copyrights {
+    background-color: #001a1a;
+    margin-top: 9.5%; /* Adjust the vertical position as needed */
+    font-size: 13px;
+    text-align: center;
+    color: #808080;
+}
+
+/* ---------------------------- RESPONSIVE FOOTER ----------------------------------- */
+@media (max-width: 600px) {
+    .positionfootericon {
+        margin-top: 18%;
+    }
+
+    .copyrights {
+        margin-top: 110px;
+        font-size: 11px;
+        text-align: center;
+    }
+}
+/* ---------------------------END OF FOOTER SECTION ---------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
