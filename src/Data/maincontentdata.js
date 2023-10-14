@@ -1,7 +1,7 @@
 export default [
     {
 
-        aboutline1: "I am a dedicated software engineer with over 2.5 years of valuable industry experience. " +
+        aboutline1: "I am a dedicated software engineer with over 2.8 years of valuable industry experience. " +
             "My journey in software engineering has been a passionate one, fueled by a genuine love for the work I do. ",
 
         aboutline2: 
@@ -35,6 +35,15 @@ export default [
             "Incorporated dynamic report components and optimized data processing using LINQ in C#. Collaborated on database schema " +
             "design, executed comprehensive testing, and improved the user interface by crafting a responsive webpage. Here is a " +
             "breakdown of my primary responsibilities. ",
+
+        infinitework: "Showed versatility in managing concurrent projects with high resource dependency. Demonstrated proficiency " +
+           "in comprehending client requirements, conducting thorough testing at various stages to guarantee superior build " +
+            "quality, ensuring punctual product delivery, and actively contributing to bug resolution across multiple server environments.",
+
+        whitehatwork: "Provided comprehensive guidance to students, aiding them in overcoming challenges related to coding, logical " +
+            "reasoning, and problem-solving techniques. Facilitated understanding of fundamental concepts and progressively advanced " +
+            "to complex object-oriented programming principles. Assisted students in identifying and rectifying bugs in their weekly " +
+            "assignment submissions, fostering their growth and development in the field of programming.",
 
         mechprogramminggrader: "Evaluate and grade student assignments in the CSCI - 243 course, maintaining fairness and adherence to grading " +
             "criteria.Provide comprehensive assistance, addressing queries and fostering a supportive learning environment.Analyze code for errors, " +

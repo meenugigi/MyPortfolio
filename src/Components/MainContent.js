@@ -112,27 +112,36 @@ export default function MainContent(props) {
                     <br></br>
 
                     <div class="card-profexp">
-                    <div class="container-prof">
-                            <div className='profexp-timeline'>JAN 2023 - MAY 2023 <br></br> <i>Full - time</i></div>
-                        <div className='profexp-details'>
-                                <div className='work-title'>Software Engineer Co-op &middot; Ecolab</div>
-                            <div className='work-details'>{props.ecolabwork}</div>
-                            <br></br>
-                            <div className='work-skills'> C#</div>
-                            <div className='work-skills'> .NET Frameworks</div>
-                            <div className='work-skills'> Entity Framework Core</div>
-                            <div className='work-skills'> JavaScript</div>
-                            <div className='work-skills'> JQuery</div>
-                            <div className='work-skills'> Microsoft SQL Server</div>
-                            <div className='work-skills'> Azure DevOps</div>
-                            <div className='work-skills'> Agile Framework</div>
-                            <div className='work-skills'> ASP.NET Razor</div>
-                            <div className='work-skills'> NUnit</div>
-                            <div className='work-skills'> AJAX</div>
+                        <div class="container-prof">
+                                <div className='profexp-timeline'>JUL 2019 - AUG 2021 <br></br> <i>Full - time</i></div>
+                            <div className='profexp-details'>
+                                    <div className='work-title'>Software Engineer &middot; Infinite Computing Systems</div>
+                                <div className='work-details'>{props.infinitework}</div>
+                                <br></br>
+                                <div className='work-skills'> Microsoft SQL Server</div>
+                                <div className='work-skills'> Azure DevOps</div>
+                                <div className='work-skills'> Agile Framework</div>
+                                <div className='work-skills'> Quality Control</div>
+                                <div className='work-skills'> Unit Testing</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <br></br>
+                    <br></br>
+
+                    <div class="card-profexp">
+                        <div class="container-prof">
+                            <div className='profexp-timeline'>SEPT 2020 - AUG 2021 <br></br> <i>Part - time</i></div>
+                            <div className='profexp-details'>
+                                <div className='work-title'>Coding Instructor &middot; WhiteHat Jr.</div>
+                                <div className='work-details'>{props.whitehatwork}</div>
+                                <br></br>
+                                <div className='work-skills'> Problem Solving</div>
+                                <div className='work-skills'> Coding fundamentals</div>
+                                <div className='work-skills'> Object Oriented Programming Concepts</div>
+                            </div>
+                        </div>
+                    </div>
+                    <br></br>
 
                     <div class="card-profexp">
                         <div class="container-prof">

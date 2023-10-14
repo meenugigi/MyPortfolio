@@ -28,7 +28,8 @@ export default function Dashboard(props){
                 <div className="dashboard-buttons">
                     <a href={props.github}><img src={github} className="github-pic" /></a>
                     <a href={props.linkedin}><img src={linkedin} className="linkedin-pic" /></a>
-                    <a href={props.download} download className='download'><button id="btn">Download Resume</button></a>
+                    <a href={props.resume}><button id="btn">View Resume</button> </a>
+                    {/*   <a href={props.download} download className='download'><button id="btn">Download Resume</button></a> */}
                 </div>
                
             </div>

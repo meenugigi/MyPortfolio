@@ -6,7 +6,6 @@ import MainContent from './Components/MainContent';
 import Footer from './Components/Footer';
 
 import dashboarddata from './Data/dashboarddata';
-import aboutdata from './Data/aboutdata';
 import maincontentdata from './Data/maincontentdata';
 import footerdata from './Data/footerdata';
 import Navbars from './Components/Navbar';
@@ -29,7 +28,8 @@ function App() {
                     contact={item.contact }
                     github={item.github}
                     linkedin={item.linkedin}
-                    download={item.download}
+                    resume={item.resume}
+                    /* download={item.download} */
                     smallintroline1={item.smallintroline1}
                     smallintroline2={item.smallintroline2}
               />      
@@ -38,28 +38,7 @@ function App() {
     )
   })
 
-    const about = aboutdata.map(item => {
-        return (
-            <div>
-                <div className="App">
-                    <About
-                        dateOfBirthheader={item.dateOfBirthheader}
-                        dateOfBirth={item.dateOfBirth}
-                        emailheader={item.emailheader}
-                        email={item.email}
-                        addressheader={item.addressheader}
-                        address={item.address}
-                        contactheader={item.contactheader}
-                        contact={item.contact}
-                        intro={item.intro}
-                        data1={item.data1}
-                        data2={item.data2}
-                        data3={item.data3}
-                    />
-                </div>
-            </div>
-        )
-    })
+
 
     const maincontent = maincontentdata.map(item => {
         return (
@@ -76,6 +55,8 @@ function App() {
                         undergradschool={item.undergradschool}
                         collinswork={item.collinswork}
                         ecolabwork={item.ecolabwork}
+                        infinitework={item.infinitework}
+                        whitehatwork={item.whitehatwork}
                         mechprogramminggrader={item.mechprogramminggrader}
                         javagrader={item.javagrader}
                         project1={item.project1}
