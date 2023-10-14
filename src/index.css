@@ -405,7 +405,7 @@ img.profile-pic {
 
     .maincontentpage-left, .maincontentpage-right {
         width: 100%; /* Full width for smaller screens */
-        padding: 4%; /* Reset padding for smaller screens */
+        padding: 6%; /* Reset padding for smaller screens */
     }
 
     .maincontentpage-right {
