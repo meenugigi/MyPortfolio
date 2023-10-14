@@ -17,7 +17,7 @@ export default function Dashboard(props){
                 <img src={profilepic} className="profile-pic" />
                 <div className='title'>{props.title}</div><br/>
                 <div className='email'>{props.email}</div><br />
-                <div className='contact'>{props.contact}</div><br />
+                {/*  <div className='contact'>{props.contact}</div><br /> */}
                 
                            
             </div>
