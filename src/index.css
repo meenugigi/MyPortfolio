@@ -378,7 +378,7 @@ img.profile-pic {
 .maincontentpage-container {
     width: 100%;
     display: flex;
-    height: 1630px;
+    height: 1590px;
 }
 .maincontentpage-left {
     position: relative;
@@ -392,7 +392,7 @@ img.profile-pic {
     padding-right: 3%;
     background-color: #001a1a;
     overflow-y: auto;
-    max-height: 1620px;
+    max-height: 1590px;
 }
 
 /* -------------------RESPONSIVE MAIN CONTENT PAGE ------------------------------*/
@@ -400,11 +400,17 @@ img.profile-pic {
 @media (max-width: 600px) {
     .maincontentpage-container {
         display: block; /* Change to block layout for smaller screens */
+        height: auto;
     }
 
     .maincontentpage-left, .maincontentpage-right {
         width: 100%; /* Full width for smaller screens */
         padding: 4%; /* Reset padding for smaller screens */
+    }
+
+    .maincontentpage-right {
+        overflow-y: auto;
+        max-height: 3220px;
     }
 
    
@@ -566,6 +572,12 @@ a.project:hover .project-title, .project-archive:hover .project-archive {
 
 
 /* ----------------------------- PROJECT SECTION IN MAIN CONTENT PAGE ------------------------ */
+
+.colored-hr {
+    border: 1px solid #a6a6a6; /* Change to the color you want using a color code or name */
+    margin: 0 3%;
+}
+
 .flex-container {
     position: relative;
     top: 0px;
@@ -660,6 +672,11 @@ a > .go-to-github-project-arrow {
 /* ----------------------------- RESPONSIVE PROJECT SECTION -----------------------------*/
 /* display main content page content one below the other on mobile views*/
 @media (max-width: 600px) {
+
+    .flex-container {
+        flex: 1;
+        margin-top: auto;
+    }
     a.project {
         margin-top: 13%;
         width: 90%;

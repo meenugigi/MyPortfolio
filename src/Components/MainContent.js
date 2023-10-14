@@ -177,7 +177,7 @@ export default function MainContent(props) {
             </div>
             <br></br><br></br>
 
-
+            <hr class="colored-hr" />
             <div class="flex-container" id="projects">
                 <a href={props.project1_githubrepo} className = 'project'>
                         <div className='project-left'>
